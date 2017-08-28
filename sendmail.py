@@ -19,7 +19,7 @@ receiver="ju_xiaona@163.com"
 subject="python email test"
 
 #邮箱正文
-msg=MIMEText("<html><h1>hello1111</h1></html>","html","utf-8")
+msg=MIMEText("<html><h1>hello</h1></html>","html","utf-8")
 msg['Subject']=Header(subject,'utf-8')
 
 #连接发送邮件
