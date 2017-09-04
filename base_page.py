@@ -5,8 +5,8 @@ class BasePage():
 	def __init__(self,driver):
 		self.driver=driver
 
-	def find_element(self,by,element):
-		return self.driver.find_element(by, element)
+	def location(self,*loc):
+		return self.driver.find_element(*loc)
 
 	def wait_element(self,by,element):
 		for i in range(30):
