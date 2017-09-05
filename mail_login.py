@@ -1,8 +1,7 @@
 from selenium import webdriver
 from time import sleep
 import unittest
-from login_page import MailPage
-from selenium.webdriver.common.by import By
+from login_page import LoginPage
 
 class Maillogin(unittest.TestCase):
 
@@ -12,13 +11,12 @@ class Maillogin(unittest.TestCase):
 		self.driver.get("http://mail.163.com")
 
 	def test_login(self):
-		mail=MailPage(self.driver)
-		mail.wait_frame()
+		mail=LoginPage(self.driver)
 		mail.switch_frame()
 		mail.login_name('ju_xiaona')
 		mail.login_pasw('jxn0124')
 		mail.login_button()
-		mail.switch_default()
+		mail.switch_frame_out()
 		
 		sleep(3)
 
