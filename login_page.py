@@ -1,6 +1,6 @@
 from time import sleep
 from selenium.webdriver.common.by import By
-from base_page import BasePage
+from base import BasePage
 
 class MailPage():
 
@@ -9,15 +9,15 @@ class MailPage():
 		self.base=BasePage(self.driver)
 
 	def login_name(self,username):
-		self.base.location(By.NAME,'email').clear()
-		self.base.location(By.NAME,'email').send_keys(username)
+		self.base.get_element(By.NAME,'email').clear()
+		self.base.get_element(By.NAME,'email').send_keys(username)
 
 	def login_pasw(self,password):
-		self.base.location(By.NAME,'password').clear()
-		self.base.location(By.NAME,'password').send_keys(password)
+		self.base.get_element(By.NAME,'password').clear()
+		self.base.get_element(By.NAME,'password').send_keys(password)
 
 	def login_button(self):
-		self.base.location(By.ID,'dologin').click()
+		self.base.get_element(By.ID,'dologin').click()
 
 
 	def wait_frame(self):
