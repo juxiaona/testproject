@@ -50,8 +50,8 @@ def sendmail(filename):
 	smtp.connect('smtp.163.com')
 	smtp.helo('smtp.163.com')
 	smtp.ehlo('smtp.163.com')
-	smtp.login('ju_xiaona@163.com', 'jxn461028')
-	smtp.sendmail('ju_xiaona@163.com', 'ju_xiaona@163.com', msgRoot.as_string())
+	smtp.login('1111', '1111')
+	smtp.sendmail('xxxx', 'xxxxx', msgRoot.as_string())
 	smtp.quit()
 
 
