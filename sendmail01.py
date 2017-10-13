@@ -43,8 +43,8 @@ def sendmail(filename):
 	smtp.connect('smtp.163.com')
 	smtp.helo('smtp.163.com')
 	smtp.ehlo('smtp.163.com')
-	smtp.login('ju_xiaona@163.com', 'jxn461028')
-	smtp.sendmail('ju_xiaona@163.com', 'ju_xiaona@163.com', msg.as_string())
+	smtp.login('xxxx', 'xxx')
+	smtp.sendmail('xxxx', 'xxxx', msg.as_string())
 	smtp.quit()
 
 
