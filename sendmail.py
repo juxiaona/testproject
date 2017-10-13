@@ -6,14 +6,14 @@ from email.header import Header
 smtpserver="smtp.163.com"
 
 #发送邮箱用户名和密码
-user="ju_xiaona@163.com"
-pawd="jxn461028"
+user="jxxxx"
+pawd="jxxxxx"
 
 #发送邮箱
-sender="ju_xiaona@163.com"
+sender="x"
 
 #接收邮箱
-receiver="ju_xiaona@163.com"
+receiver="xxxx"
 
 #邮件主题
 subject="python email test"
